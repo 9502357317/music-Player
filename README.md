@@ -1,4 +1,4 @@
-Music Player
+Music Player:- 
 A simple and elegant music player built with HTML, CSS, and JavaScript. This project allows you to play local audio files, control playback, and enjoy a visually appealing interface with a heart animation.
 
 Features
@@ -62,23 +62,6 @@ Add track art images (e.g., butta-bomma.jpg) to the images folder.
 4. Run the Project
 Open the index.html file in your browser using Live Server (VS Code extension) or any local server.
 
-Folder Structure
-Copy
-music-player/
-│
-├── index.html          # Main HTML file
-├── style.css           # CSS file for styling
-├── app.js              # JavaScript file for functionality
-├── images/             # Folder for track images
-│   ├── butta-bomma.jpg # Image for Butta Bomma
-│   ├── samajavaragamana.jpg # Image for Samajavaragamana
-│   └── naatu-naatu.jpg # Image for Naatu Naatu
-├── songs/              # Folder for songs
-│   ├── butta-bomma.mp3 # Song file
-│   ├── samajavaragamana.mp3 # Song file
-│   └── naatu-naatu.mp3 # Song file
-└── README.md           # Project documentation
-How to Use
 Open the music player in your browser.
 
 Use the play/pause button to start or stop playback.
