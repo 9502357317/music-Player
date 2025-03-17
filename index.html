@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Songs Player</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="player">
+      <!-- Grizzly Bear -->
+      <div class="grizzly-bear">
+        <img src="teddy.jpg" class="bear" alt="Grizzly Bear">
+      </div>
+      <!-- Title Section -->
+      <div class="player-title">Songs Player</div>
+      <!-- Wrapper for Player Content -->
+      <div class="wrapper">
+        <!-- Track Details -->
+        <div class="details">
+          <div class="now-playing">Playing music 1 of 10</div>
+          <div class="track-art" style="background-image: url('images/blue.jpg');"></div>
+          <div class="track-name">Blue</div>
+          <div class="track-artist">Yung Kai</div>
+        </div>
+
+        <!-- Slider for Seek and Volume -->
+        <div class="slider_container">
+          <div class="current-time">00:00</div>
+          <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+          <div class="total-duration">04:30</div>
+        </div>
+        <div class="slider_container">
+          <i class="fa fa-volume-down"></i>
+          <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+          <i class="fa fa-volume-up"></i>
+        </div>
+        
+        <!-- Controls for Playback -->
+        <div class="buttons">
+          <div class="prev-track" onclick="prevTrack()">
+            <i class="fa fa-step-backward fa-2x" title="Previous"></i>
+          </div>
+          <div class="playpause-track" onclick="playPauseTrack()">
+            <i class="fa fa-play-circle fa-5x" title="Play/Pause"></i>
+          </div>
+          <div class="next-track" onclick="nextTrack()">
+            <i class="fa fa-step-forward fa-2x" title="Next"></i>
+          </div>
+        </div>
+
+        <!-- Visualizer (Wave Animation) -->
+        <div id="wave">
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Love Canvas -->
+  <canvas id="loveCanvas"></canvas>
+</body>
+</html>
